@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import BlogCard from '../components/BlogCard';
 import Navbar from '../components/Navbar';
+import Footer from 'components/Footer';
 import fetcher from '../utils/fetcher';
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
