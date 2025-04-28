@@ -20,15 +20,14 @@ const Home = () => {
     <div>
       <Navbar />
       <main className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Blog Feed</h1>
+        <h1 className="text-2xl font-bold mb-4">Latest News</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {blogs.map((blog) => (
             <BlogCard 
               id={blog.id}
               key={blog.id}
               title={blog.title} 
-              content={blog.content} 
-              author={blog.author} 
+              content={blog.excerpt} 
               date={blog.date} 
               thumb={blog.thumbnail}
               link={blog.slug}
